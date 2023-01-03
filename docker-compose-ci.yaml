@@ -4,7 +4,7 @@ services:
   app:
     image: freddy111/app-hosting:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
-      - 8080:25000
+      - 8080:5000
     environment:
       - DB_USER=$DB_USER
       - DB_PASSWORD=$DB_PASSWORD
